@@ -35,12 +35,12 @@ body {
   display: grid;
   grid-template-columns: 1fr 300px;
   grid-template-rows: 1fr 1fr;
-  gap: 20px;
+  gap: 30px;
   margin: 30px;
 }
 
 .main-content > div {
-  border: 1px solid;
+  /* border: 1px solid; */
   display: grid;
   grid-template-rows: auto 1fr;
 }
@@ -48,8 +48,10 @@ body {
 .announcements-cards,
 .trending-cards {
   background-color: white;
-  border: 1px solid;
+  /* border: 1px solid; */
   border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(121, 121, 121, 0.8);
+  max-height: 600px;
 }
 
 .projects {
@@ -59,15 +61,19 @@ body {
 .projects-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 20px;
+  gap: 30px;
 }
 
 .card {
-  border: 1px solid;
+  border: 15px solid;
+  border-style: none none none solid;
+  border-color: #f1b428;
   border-radius: 15px;
   background-color: white;
+  box-shadow: 5px 5px 15px rgba(121, 121, 121, 0.8);
+  min-height: 250px;
 }
 
 h2 {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
