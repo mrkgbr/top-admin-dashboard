@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Roboto, "Courier New", Courier, monospace;
 }
 
 html {
@@ -40,15 +41,15 @@ body > div {
 
 .main-content > div {
   border: 1px solid;
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
-.main-content > div > div {
+.main-content > * > div {
   background-color: white;
   border: 1px solid;
 }
 
 .projects {
   grid-row: 1 / -1;
-  display: grid;
-  grid-template-rows: auto 1fr;
 }
