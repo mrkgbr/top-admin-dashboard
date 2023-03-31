@@ -34,9 +34,9 @@ body {
   background-color: #e3e8f1;
   display: grid;
   grid-template-columns: 1fr 300px;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
   gap: 30px;
-  margin: 30px;
+  margin: 30px 30px 100px 30px;
 }
 
 .main-content > div {
@@ -51,7 +51,6 @@ body {
   /* border: 1px solid; */
   border-radius: 15px;
   box-shadow: 5px 5px 15px rgba(121, 121, 121, 0.8);
-  max-height: 600px;
 }
 
 .projects {
@@ -71,7 +70,7 @@ body {
   border-radius: 15px;
   background-color: white;
   box-shadow: 5px 5px 15px rgba(121, 121, 121, 0.8);
-  min-height: 250px;
+  min-height: 350px;
 }
 
 h2 {
