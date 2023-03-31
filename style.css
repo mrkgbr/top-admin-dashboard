@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: lightgrey;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 150px 1fr;
+}
+
+body > div {
+  border: 1px solid;
+}
+
+.sidebar {
+  grid-row: 1 / -1;
+}
