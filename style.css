@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  min-height: 80%;
+  min-height: 100%;
   display: grid;
   grid-template-columns: 300px 1fr;
   grid-template-rows: 175px 1fr;
