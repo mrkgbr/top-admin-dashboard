@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  min-height: 100%;
+  min-height: 80%;
   display: grid;
   grid-template-columns: 300px 1fr;
   grid-template-rows: 175px 1fr;
@@ -58,8 +58,7 @@ body {
 
 .projects-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
 }
 
