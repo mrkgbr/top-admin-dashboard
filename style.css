@@ -46,6 +46,7 @@ h4 {
   background-color: white;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  padding: 30px;
 }
 
 .header-bottom {
@@ -55,10 +56,23 @@ h4 {
 
 .header-bottom-right {
   display: grid;
-  grid-template-columns: repeat(3, 150px);
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
   align-items: center;
   justify-items: center;
-  justify-content: center;
+  justify-content: end;
+}
+
+.header-bottom-left {
+  display: grid;
+  grid-template-columns: 100px 300px;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+
+.header-bottom-left > img {
+  grid-row: 1 / -1;
+  justify-self: center;
 }
 
 button {
