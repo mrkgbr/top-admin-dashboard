@@ -145,6 +145,7 @@ button:active {
   padding: 20px;
   display: grid;
   align-items: center;
+  min-height: 400px;
   max-height: 500px;
 }
 
