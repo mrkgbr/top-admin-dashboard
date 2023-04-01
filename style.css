@@ -4,9 +4,13 @@
   font-family: Roboto, "Courier New", Courier, monospace;
 }
 
-* > a {
+a {
   text-decoration: none;
   color: inherit;
+}
+
+a:hover {
+  color: #b5b5b5ad;
 }
 
 html {
@@ -35,11 +39,7 @@ h4 {
   color: white;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 1fr 20px;
-}
-
-.sidebar > div {
-  border: 1px solid;
+  grid-template-rows: 50px 350px 1fr 20px;
 }
 
 .header {
@@ -165,4 +165,45 @@ h4 {
 .trending-text,
 .announcement > p {
   color: rgb(125, 124, 124);
+}
+
+.dashboard {
+  margin-top: 20px;
+}
+
+.dashboard > img {
+  height: 40px;
+  filter: invert(100%);
+  margin: 0 20px;
+  justify-self: center;
+}
+
+.links {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 50px);
+  margin-top: 100px;
+  height: 300px;
+}
+.links > * > img,
+.menu > * > img {
+  height: 25px;
+  filter: invert(100%);
+  justify-self: center;
+}
+
+.sidebar-container {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+}
+
+.menu {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 50px);
+  margin-top: 100px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.75rem;
 }
