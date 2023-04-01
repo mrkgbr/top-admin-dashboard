@@ -21,7 +21,7 @@ body {
   min-height: 100%;
   display: grid;
   grid-template-columns: 300px 1fr;
-  grid-template-rows: 200px 1fr;
+  grid-template-rows: 175px 1fr;
   background-color: #e3e8f1;
 }
 
@@ -91,6 +91,17 @@ h4 {
   margin-left: 10px;
   max-width: 50%;
   min-width: 350px;
+}
+
+.header-top-right {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 30px;
+}
+
+.bell {
+  justify-self: end;
 }
 
 button {
