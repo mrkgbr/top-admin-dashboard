@@ -4,6 +4,11 @@
   font-family: Roboto, "Courier New", Courier, monospace;
 }
 
+* > a {
+  text-decoration: none;
+  color: inherit;
+}
+
 html {
   height: 100%;
 }
@@ -71,8 +76,22 @@ body {
   background-color: white;
   box-shadow: 5px 5px 15px rgba(121, 121, 121, 0.8);
   min-height: 350px;
+  display: grid;
+  grid-template-rows: 40px 1fr 40px;
+  padding: 25px;
 }
 
-h2 {
+.main-content > * > h2 {
   margin-bottom: 10px;
+}
+
+.card-buttons > a > img {
+  height: 30px;
+}
+
+.card-buttons {
+  justify-self: end;
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
 }
