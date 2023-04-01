@@ -44,6 +44,38 @@ h4 {
 
 .header {
   background-color: white;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.header-bottom {
+  display: grid;
+  grid-template-columns: 2fr 500px;
+}
+
+.header-bottom-right {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+button {
+  color: white;
+  background-color: #1992d4;
+  width: 125px;
+  height: 3rem;
+  border-radius: 1.5rem;
+  border: none;
+}
+
+button:hover {
+  background-color: #1992d4c7;
+}
+
+button:active {
+  border: 2px solid;
 }
 
 .main-content {
